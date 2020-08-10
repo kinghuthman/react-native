@@ -3,6 +3,7 @@
 ## Course Overview
 
 - Physical Device Setup
+
   - npm install after changing into the rn-starter folder
   - npm start
   - Install expo on phone
@@ -10,7 +11,7 @@
   - Scan qr code that pops up in browser
     - Toggle to tunnel if connection issue
   - Making Changes
-  
+
 ## Working with Content
 
 ### Overview of React Components
@@ -57,3 +58,31 @@
   - return 'opening tag-View' jsx elements 'closing tag-View'
 - Placing the opening tag below the return keyword returns nothing
   - needs to opening up next to the return keyword or wrapped with parenthesis
+
+## List Building - With Style!
+
+### Building Lists
+
+- ehh
+
+### The FlatList Element
+
+- Lists
+  - Always starts off with an array of records that we want to represent on the screen in some fashiion
+    - array of objects
+    - array of numbers
+    - strings..
+    - Starting point is an array
+- FlatList Element
+  - Turns array into a list of elements
+  - We are required to pass in a 'prop' of 'data' - the array of data that we are going to create a bunch of elements out of
+  - Also required to pass in a 'renderItem' prop - function that will turn each individual item into an element
+  - If you are coming form React on the web, you might be used to 'mapping' an array of data to build a list - FlatList is better with RN
+    - Has a bunch of optimizations to render lists on mobile devices
+  - 'renderItem' is called with each individual element
+    - that element argument is misleading and not exactly the items from the array
+    - it has a couple of properties
+      - the item property that will have the element from that array
+      - the index property, where that element is in the array
+    - destructure to get item without typing out element
+      - save space
