@@ -167,4 +167,32 @@
 
 ### Destructing Props
 
--
+- curly braces inside of parenthesis can use navigation now instead of props
+
+## Building Reusable Components
+
+### Component Reuse with Props
+
+- ...
+
+### Parent-Child Relationship
+
+- Anytime we want to make some reusable component that we expect to reuse several times over create it inside of a separate directory components
+  - Import that 'child' component into the parent component of where we want to display it
+
+### Communicating from Parent to Child
+
+- When a component is passed into the parent, we can give that component any prop name we want (only components from react or others do the need to be specific)
+  - the prop system shows up as an object within the child component
+    - this object contains the props that were passed into the component via the parent
+      - the name we gave the child component will be listed as a key in this object
+        - child component should return that prop if want to display it
+
+### Showing Images
+
+- Image is a primitive self closing element
+  - takes a property called source which should route to the relative path of the image
+
+### Passing Images as
+
+- Has a number identifier when using require to point to a particular image
