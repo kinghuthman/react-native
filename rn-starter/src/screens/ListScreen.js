@@ -3,16 +3,16 @@ import { View, Text, StyleSheet, FlatList } from "react-native";
 
 const ListScreen = () => {
   const friends = [
-    { name: "Friend #1", age: "20" },
-    { name: "Friend #2", age: "45" },
-    { name: "Friend #3", age: "32" },
-    { name: "Friend #4", age: "27" },
-    { name: "Friend #5", age: "20" },
-    { name: "Friend #6", age: "24" },
-    { name: "Friend #7", age: "50" },
-    { name: "Friend #8", age: "22" },
-    { name: "Friend #9", age: "35" },
-    { name: "Friend #10", age: "54" },
+    { name: "Paul Pogba", age: "20" },
+    { name: "Jesse Lingard", age: "45" },
+    { name: "Bruno Fernades", age: "32" },
+    { name: "Anthony Martial", age: "27" },
+    { name: "Brandon Williams", age: "20" },
+    { name: "Daniel James", age: "24" },
+    { name: "Fred", age: "50" },
+    { name: "Matic", age: "22" },
+    { name: "Bailly", age: "35" },
+    { name: "Marcus Rashord", age: "54" },
   ];
 
   return (
@@ -24,7 +24,7 @@ const ListScreen = () => {
         return (
           <View>
             <Text style={styles.textStyle}>
-              {item.name} - Age {item.age}
+              {item.name} - Matches {item.age}
             </Text>
           </View>
         );

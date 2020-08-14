@@ -1,12 +1,12 @@
-import React from 'react';
-import { Text, StyleSheet, View } from 'react-native';
+import React from "react";
+import { Text, StyleSheet, View } from "react-native";
 
 const ComponentsScreen = () => {
-  const name = 'Huthman King';
+  const name = "Fatai bitchass King";
   return (
     <View>
-      <Text style={styles.header}>Getting started with React Native!</Text>
-      <Text style={styles.subHeader}>My name is {name}</Text>
+      <Text style={styles.header}>Ole at the wheel?</Text>
+      <Text style={styles.subHeader}>Analysis by {name} </Text>
     </View>
   );
 };

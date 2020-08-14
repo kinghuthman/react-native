@@ -1,14 +1,26 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
-const HomeScreen = () => {
-  return <Text style={styles.text}>Hello Huthmaan!!</Text>;
+const HomeScreen = ({ navigation }) => {
+  return (
+    <View>
+      <Text style={styles.text}>Manchester United</Text>
+      <Button
+        onPress={() => navigation.navigate("Components")}
+        title="Ole At the Wheel?"
+      />
+      <Button
+        title="Go to List Demo"
+        onPress={() => navigation.navigate("List")}
+      />
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
-  }
+    fontSize: 30,
+  },
 });
 
 export default HomeScreen;

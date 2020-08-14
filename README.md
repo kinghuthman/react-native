@@ -98,7 +98,6 @@
     - key allows react native to tie the definition of some particular object of data with the actual element on the screen and tag it with the same exact key
     - the key is mostly a performance optimization...
     - it's a performance optimization making updates to our list
-    -
 
 ### Solving the key issue
 
@@ -123,3 +122,49 @@
   - tells react native you want to scroll through the list horizontally
 - showsHorizontalScrollIndicator
   - property to control scroll bar
+
+## Navigating users between screens
+
+### Button types
+
+- Buttons with React Native
+  - Button
+    - Very simple component for showing a button and detecting a press
+  - TouchableOpacity
+    - Highly customizable component that can detect a press on just about any kind of element
+
+### Button in Action
+
+- Button
+  - onPress is a specific property that the button element expects
+  - Doesn't take in text between two tags
+  - It is a single closing element that takes in a title property with datatype string
+  - Styled
+
+### Touchable Opacity in Action
+
+- Not a self-closing tag
+- Gets no styling
+  - except for the fadeout effect
+  - fadeout effect applies to anything within the element's tags
+- multiple elements can be placed within this element but it will all have the touch/button effect which can be useful depending on the use case
+
+## Navigating Users Between Screens
+
+### Navigating with React Navigation
+
+- React Navigation / Stack Navigator
+  - An object, decides what to show on the screen at any given time
+  - When the stack navigator shows any one of these different components,
+    - it renders it in the process it passes down a set of configuration options(props)
+      - props are not limited to just primitive elements created by React Native however, components that we create can also receive props as well
+      - whenever a component that we create is passed a props object, it always shows up as as the first argument to this function
+      - reads as ...
+        - a props object (top level)
+          - navigation property points to an object
+            - and that navigation object has keys of actions
+      - specifically for that stack navigator - navigate is a function we can use to change the content that is visible on the screen of our device, takes a string that should match one of the different route names that are defined in the createStackNavigator object
+
+### Destructing Props
+
+-
