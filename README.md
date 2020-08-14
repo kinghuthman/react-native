@@ -68,7 +68,7 @@
 ### The FlatList Element
 
 - Lists
-  - Always starts off with an array of records that we want to represent on the screen in some fashiion
+  - Always starts off with an array of records that we want to represent on the screen in some fashion
     - array of objects
     - array of numbers
     - strings..
@@ -83,6 +83,43 @@
     - that element argument is misleading and not exactly the items from the array
     - it has a couple of properties
       - the item property that will have the element from that array
-      - the index property, where that element is in the array
     - destructure to get item without typing out element
+      - the index property, where that element is in the array
       - save space
+
+### Why a Key Property?
+
+- Changing the original array of data effects a list when there is no key provided
+  - react native rebuilds the list/array if you don't provide a key
+    - will manipulate the incorrect index if a key is not provided
+- the key allows react native to detect change in the behavior of a list and respond accordingly without unwanted side-effects
+  - idea behind the key
+    - track different objects and detect when one is updated without having to rebuild array
+    - key allows react native to tie the definition of some particular object of data with the actual element on the screen and tag it with the same exact key
+    - the key is mostly a performance optimization...
+    - it's a performance optimization making updates to our list
+    -
+
+### Solving the key issue
+
+- There are two different ways
+  - add a key property for each object
+    - the requirement of a key property
+      - is that it must be a string
+      - it must be consistent between renders and it must be unique compared to all the other objects inside of the array of data
+      - this is before runtime
+  - app keyExtractor property to FlatList element
+    - this will use an anon function whose argument will be each object in the array,
+      - use this to return a unique character amongst the list
+      - this is done at runtime
+  - keyExtractor is just one line of code, the other you have to provide the key property
+    - really want to keep the data inside of the object to just the data itself
+
+### A few props around FlatList
+
+- In order to make sure that the list spans all the way past the bottom of the screen we can add in a property like marginVertical
+  - marginVertical provides spacing around each element
+- horizontal
+  - tells react native you want to scroll through the list horizontally
+- showsHorizontalScrollIndicator
+  - property to control scroll bar
