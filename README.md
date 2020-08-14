@@ -196,3 +196,52 @@
 ### Passing Images as
 
 - Has a number identifier when using require to point to a particular image
+
+## State Management in React Components
+
+### State in Components
+
+- Props
+  - System to pass data from a parent to child
+- State
+  - System to track a piece of data that will change over time. If that data changes, our app will 'rerender'
+
+### Screen Boilerplate
+
+- ..
+
+### State in Action
+
+- By default react does not watch any variable nor wait for it to update to display the change
+- useState is a function to create variables that are essentially watched to update the components on the screen as intended
+  - can initialize to any type of data
+  - Anytime we want to update or change a piece of state, never modify it directly. React does not detect direct changes
+    - Instead anytime we want to change a state variable, use the second variable that was destructured off of useState
+      - [counter, setCounter] = useState(0)
+        - counter is the variable that is displayed
+        - setCounter updates that variable 'counter'
+          - setCounter(counter + 1)
+
+### Notes on State
+
+- React automatically 'rerenders' or re-runs after an event ex. (onPress())
+  - React does not initialize again
+- Never directly modify a state variable. React does not detect this change! Only use the setter funciton
+- We can name the state variable anything we wish
+- Track any kind of data that changes over time - number, string, array of objects, etc
+- when a component is rerendered, all of its children get rerendered too
+- A state variable can be passed to a child component! At this point the state variable is now being used as props
+
+### App Overview
+
+- ..
+
+### Generating Random Colors
+
+- Math.Random() returns a number between 0 and 1
+
+### Showing Colors with a FlatList
+
+- Only have to use destructuring on render item
+
+### App Overview
