@@ -383,3 +383,11 @@
           - TextInput is programmed to receive this prop
           - Anytime a user changes the text, we want to update our state variable inside of our text screen
   - ALWAYS USE THIS PATTERN FOR TEXT INPUT
+
+### Exercise
+
+- ..
+
+### Layout with React Native
+
+- ..
