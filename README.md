@@ -286,3 +286,48 @@
 - ..
 
 ### Introduction to Reducers
+
+- reducer
+  - function that gets called with two objects
+    - argument #1
+      - object that has all of our state in it
+    - argument #2
+      - object that describes the update we want to make
+    - we look at argument #2 and use it to decide how to change argument #1
+    - NEVER change argument #1 directly
+    - We MUST always return a value to be used as argument #1
+
+### Creating a Reducer
+
+- To manage state we either are using a reducer or the useState hook (setState(?))
+- useReducer is preferable to useState when using 'complex' state logic
+  - const [state, dispatch] = useReducer(reducer, initial value for state object)
+    - 'reducer' is a function
+      - best to make this function outside of the function object that holds/implements useReducer
+        - confusion of state can be troublesome
+      - first argument is the state object
+      - second argument describes how we change that state object
+        - usually called 'action'
+      - the function's object uses a switch statement for each of our properties
+        - it rebuilds state from scratch and returns a new object, the new object will have the update
+        - return {...state, property: state.property + action.amount}
+          - return a brand new object
+          - {...state, property: state.property + action.amount}
+            - ...state
+              - take all of the existing properties out of our state object
+              - and copy and paste them into that brand new object
+            - property: state.property (+ || - || w.e update) action.amount
+              - overwrite the existing property we want to update
+    - state will initially be equal to the 'initial value for state object'
+    - never modify state directly
+
+### Applying State with a Reducer
+
+- when we call useReducer that gives us back two things
+  - our current state
+    - anytime our state object changes, the entire component is going to re-render
+  - how do we run that reducer and make that change?
+    - dispatch
+      - runMyReducer
+      - invoke it
+      - pass in an argument to use as our action object
