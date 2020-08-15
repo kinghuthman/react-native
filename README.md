@@ -345,3 +345,41 @@
   - Some data that is critical to the change operation
 
 ### Exercise
+
+-..
+
+### Handling Input
+
+- TextInput (primitive)
+  - Has 0 styling applied to it, with the exception of some height
+  - Add styling right away
+
+### Two Important Props
+
+- ios
+  - auto-corrects automatically
+    - autoCorrect={}
+      - true
+      - false
+  - capitalizes automatically
+    - autoCapitalize=
+      - characters
+      - none
+      - sentences
+      - words
+
+### Weird Things with Text and State
+
+- TextInput
+  - has a state property that holds the input we track
+    - parent should not reach down directly into child and try to inspect its state
+    - component/screen should hold state that represents what is inside of TextInput
+      - everytime we render component/screen, show that input element and pass two props
+        - value
+          - TextInput is programmed to receive this prop
+          - this is what displays state
+        - callback function called onChangeText
+          - this will set state
+          - TextInput is programmed to receive this prop
+          - Anytime a user changes the text, we want to update our state variable inside of our text screen
+  - ALWAYS USE THIS PATTERN FOR TEXT INPUT
