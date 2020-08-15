@@ -331,3 +331,15 @@
       - runMyReducer
       - invoke it
       - pass in an argument to use as our action object
+
+### Restoring Validation
+
+- when we return a value from our reducer, our component will re-render
+- whatever is returned from the reducer will be provided to the state
+
+### Community Convention in Reducers
+
+- type
+  - String that describes the exact change operation we want to make
+- payload
+  - Some data that is critical to the change operation
