@@ -343,3 +343,5 @@
   - String that describes the exact change operation we want to make
 - payload
   - Some data that is critical to the change operation
+
+### Exercise
