@@ -205,6 +205,10 @@
   - System to pass data from a parent to child
 - State
   - System to track a piece of data that will change over time. If that data changes, our app will 'rerender'
+- Three Questions
+  - What piece of data is changing in our app?
+  - What type of data is it?
+  - What is the data's starting (default) value?
 
 ### Screen Boilerplate
 
@@ -245,3 +249,32 @@
 - Only have to use destructuring on render item
 
 ### App Overview
+
+- ..
+
+### Reusable Color Adjuster
+
+- ..
+
+### Coordinating State
+
+- Carefully think about where we place state
+  - In our screens or components?
+  - Where are we using this data specifically?
+  - What reads the state variables?
+  - What changes the state variables?
+- Generally, we create state variables in the most parent component that needs to read or change a state value
+  - How does the child component change the parent's state values?
+    - Pass a callback function down to the children as a prop
+      - In that callback, it can invoke that function and make a change to that state value that will change the state value inside of the parent, causing it to re-render, which will then re-render the child
+  - If a child needs to read a state value, the parent can pass it down as as prop
+
+### Passing Callbacks to Children
+
+- ..
+
+### Tying State Values Together
+
+- ..
+
+### Validating State Change
