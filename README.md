@@ -616,3 +616,28 @@
 
 - onEndEditing={() =>}
   - anytime a user hits enter/ok
+
+## Using Outside APIs
+
+### Configuring Axios
+
+- fetch
+  - Built in function for making requests
+  - error handling is a bit weird
+  - requires us to write a lot of wrapper code to make it work 'sensibly'
+- axios
+  - separate library for making requests
+  - easy to use, sensible defaults
+  - increases our app size (very, very slightly)
+
+### Making The Request
+
+- passing a params in axios call will append any key onto the end of the initial path
+
+### Error Handling
+
+- ..
+
+### Running an Initial Search
+
+- default search when app loads up
