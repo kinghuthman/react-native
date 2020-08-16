@@ -467,7 +467,7 @@
       - justifyContent will work horizontally
     - opposite of alignItems
 - lays out children along the 'primary axis'. Primary axis is whatever 'flexDirection' is set to
-- flex-start (on parent)
+- flex-start (on parent)(default)
   - top
 - center (on parent)
   - center
@@ -601,3 +601,18 @@
 - expo/vector icons
   - <https://icons.expo.fyi/>
 - Import the icons library to display it
+
+### Search Bar Styling
+
+- ..
+
+### Managing State
+
+- At the parent component is where state will be held
+  - pass callback to child to update state
+- other components might need to use that state property
+
+### Detecting Editing Complete
+
+- onEndEditing={() =>}
+  - anytime a user hits enter/ok
