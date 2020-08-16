@@ -388,6 +388,147 @@
 
 - ..
 
+## How to Handle Screen Layout
+
 ### Layout with React Native
 
-- ..
+- Layout Systems
+  - Box Object Model
+    - The height/width of an element + the space around it
+      - Use this to affect the positioning of a single element
+  - Flex Box
+    - How some number of sibling elements get laid out inside a parent
+      - Use this to position multiple elements with a common parent
+    - Position
+      - How a single element gets laid out inside a parent
+        - Use this to override Box Object + Flex Box
+
+### Basics of Box Object Model
+
+- Box Object Model
+
+  - 'Content' and 'Padding' sections show background color, Border and Margin do not
+  - from inside to out
+
+    - content -> padding -> border -> margin
+
+      - content is the actual content
+        - height
+      - padding is the space between the content and border
+        - padding
+        - paddingTop
+        - paddingBottom
+        - paddingHorizontal
+        - paddingVertical
+      - border encompasses the content and padding
+        - borderWidth
+        - borderTopWidth
+        - borderBottomWidth
+      - margin is the space between the element's border and another element's border
+
+        - margin
+        - marginTop
+        - marginBottom
+        - marginVertical
+        - marginHorizontal
+
+### Align Items With Flex (parent)
+
+- alignItems (on parent)
+  - stretch (default)
+    - attempt to stretch and take up as much horizontal space as it possibly can
+  - flex-start
+    - condense down to the left hand side as close as it possibly can
+  - center
+    - center everything horizontally
+  - flex-end
+    - condense down to the right hand side as close as it possibly can
+
+### Flex Direction (parent)
+
+- flexDirection (on parent)
+  - controls whether children are laid out vertically or horizontally
+    - column (default)
+      - align the items horizontally...
+    - row
+      - vertically...
+  - changes the way alignItems works
+
+### Justify Content (parent)
+
+- changes how the children are laid out vertically inside the parent
+  - very similar to align items
+  - flexDirection:
+    - column
+      - justifyContent will work vertically
+    - opposite of alignItems
+  - flexDirection:
+    - row
+      - justifyContent will work horizontally
+    - opposite of alignItems
+- lays out children along the 'primary axis'. Primary axis is whatever 'flexDirection' is set to
+- flex-start (on parent)
+  - top
+- center (on parent)
+  - center
+- flex-end (on parent)
+  - shove down
+- space-between (on parent)
+  - space between each child evenly distributed
+- space-around (on parent)
+  - similar to space-between but adds in space at the top and bottom
+
+### Flex Values
+
+- parent
+  - alignItems
+  - justifyContent
+  - flexDirection
+- child
+  - flex
+    - makes a child in a parent take up as much space as possible
+  - alignSelf
+    - overrides the value of align items on the parent element
+    - flex-end
+      - pushes child all the way to the right
+    - center
+      - center
+    - flex-start
+      - pushes child all the way to the left
+    - stretch
+      - child takes as much space as possible
+
+### The Position Property
+
+- By default every element that we place has a property with the value of relative
+- absolute
+  - ignored by siblings
+  - still obeys some flex-box rules set by the parent (positional)
+    - align-items: 'center'
+      - obeyed
+    - align-items: 'stretch'
+      - ignored
+
+### Top, Bottom, Left, Right
+
+- adds in a little bit of extra spacing between one element and a sibling
+  - shifts the element without moving its sibling
+
+### Absolute Fill Objects
+
+- Trick to have child expand and fill up entire height and width of the parent view element
+- first set the position absolute property that would make sure it is completely ignoring its sibling elements
+- could also set a top bottom left right value of 0
+- ...StyleSheet.absoluteFillObject is something react-native implemented to the same thing
+
+### Applying Layout Systems
+
+- Apply Box Object Model Rules
+  - Is position 'absolute'?
+    - no
+      - Apply all flex box rules considering siblings
+      - Place element inside parent
+      - Apply top, left, right, bottom
+    - yes
+      - Apply some flex rules, ignore all siblings
+      - Apply top, left, right, bottom
