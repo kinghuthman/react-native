@@ -536,3 +536,68 @@
 ### Exercise
 
 - ..
+
+## Restaurant Search App
+
+### App Overview
+
+- User can search for restaurant
+- Display results of search on screen
+  - cheaper ones first to high tier
+  - scroll horizontally
+  - user can tap on restaurant
+    - images from restaurant will appear on screen
+
+### Project Generation
+
+- expo-cli
+  - Adds in a ton of default config to use features common in apps, like icons, video, better camera use, etc
+  - Created because react-native-cli didn't give you enough out of the box
+  - NAVIGATION Setup
+    - <https://www.udemy.com/course/the-complete-react-native-and-redux-course/learn/lecture/15778212#content>
+- react-native-cli
+  - Default CLI to generate a project.
+  - Requires a lot of extra work to add in common features
+
+### Yelp Signup
+
+- using the yelp api
+  - yelp.com/fusion - documentation
+
+### Yelp Walkthrough
+
+- ..
+
+### React Native Navigation
+
+- React provides a couple of different objects for navigating users around an app
+- three important objects to understand are the..
+  - StackNavigator
+  - BottomTabNavigator
+  - DrawerNavigator
+  - these objects take different screens/components and wire them together in some automagic fashion
+
+### Assembling a Navigator
+
+- App.js is a special file
+  - anything that is exported from that device is going to be taken from react native and be shown on the screen
+    - createStackNavigator is a function that takes two objects as arguments
+      - first object lists the screens
+      - second object are configurations
+        - intialRouteName
+        - defaultNavigationOptions is an object that takes additional properties
+          - title
+
+### Architecture Approach
+
+- What reusable components can we use?
+
+### Starting the SearchBar
+
+- ..
+
+### Displaying Icons
+
+- expo/vector icons
+  - <https://icons.expo.fyi/>
+- Import the icons library to display it
