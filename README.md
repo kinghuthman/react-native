@@ -795,3 +795,15 @@
 
 - useContext
   - function that analyzes a context object and gives us access to it's value prop
+
+### Rending a Lists of Posts
+
+-..
+
+### Adding State with Context
+
+-..
+
+### It works
+
+- Context is just the system of communicating information
