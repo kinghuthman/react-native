@@ -668,4 +668,23 @@
 
 ### FlatList Rendering
 
--
+- ..
+
+## Navigation With Parameters
+
+### Showing a Single List
+
+- ..
+
+### Showing Additional Info
+
+- Image elements will collapse itself unless given a height and width
+
+### Hiding Scroll Bars
+
+- ScrollView is used to wrap around elements to make them vertically scrollable on the screen
+
+### Constraining View Elements
+
+- flex: 1
+  - only try to use the actual visible screen that is visible
