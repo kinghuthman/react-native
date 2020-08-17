@@ -754,3 +754,34 @@
 ### Initial Setup
 
 -..
+
+### Wrapping the Navigator
+
+- Assign the app container to a reference and return it in an exported anon function
+  - const App = createAppContainer(navigation)
+  - export default () => { return <App />}
+
+### Introduction to Context
+
+- Props
+  - Communicates information from a parent directly down to a child
+  - Easy to setup
+  - To communicate data down multiple layers, we have to write a lot of code
+- Context
+  - Moves information from a parent to some nested child
+  - Complicated to setup, lots of special terms
+  - Easy to communicate data from a parent to a super nested child
+
+### Adding Context
+
+- React.createContext()
+  - used as a pipe to connect to 'store'
+  - ex. const BlogContext = React.createContext();
+- Store
+  - ded
+- Children
+  - unrelated to context
+    - different feature in react we are taking advantage of
+  - CustomComponent is an element
+    - elements wrapped with this tag will be passed as a prop called 'children'
+    - allows us to accept some other component more or less as an argument
