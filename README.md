@@ -735,3 +735,13 @@
 -..
 
 ### One Last Fix
+
+-..
+
+## Advanced State Management with Context
+
+### App Overview
+
+- Blog
+- CRUD
+- DATA MANAGEMENT
