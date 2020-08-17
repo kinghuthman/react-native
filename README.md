@@ -688,3 +688,27 @@
 
 - flex: 1
   - only try to use the actual visible screen that is visible
+
+### Empty Elements
+
+- A view element can sometimes be destructive or interrupt the layout we're looking for
+- A view element can accidentally span off the screen in an attempt to fit all of its contents
+- So instead of using view can use <></>
+  - empty element that will automatically be rendered on the screen by RN
+    - RN will not any of this content to go off the edge of the screen
+
+### Spacing on the Search Bar
+
+- ..
+
+### Reminder on Navigation
+
+- Each screen rendered by the stackNavigator has props that is an object with several properties, most importantly 'navigation'
+
+### Navigating from a Child Component
+
+- pass down functions needed as a prop
+- TouchableOpacity
+  - fades out any child elements placed inside of it
+
+### WithNavigator Helper
