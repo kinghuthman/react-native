@@ -745,3 +745,12 @@
 - Blog
 - CRUD
 - DATA MANAGEMENT
+
+### Issues With Data
+
+- Will be making use of a global state management pattern
+  - manage all of our state inside of on single location
+
+### Initial Setup
+
+-..
