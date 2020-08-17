@@ -712,3 +712,20 @@
   - fades out any child elements placed inside of it
 
 ### WithNavigator Helper
+
+- Special Function that we can pass our component into
+- Returns a special version of a component that has access to the navigation prop that it needs to make use of with navigation
+
+### Communicating Between Screens
+
+- can pass an object as a second argument for the navigate method that contains properties to pass onto the screen we are navigating to
+  - navigation.navigate('goToThisScreen', {id: item.id})
+  - use getParams method to access that key
+    - navigation.getParams('id')
+
+### Fetching a Single Restaurant
+
+- Anytime we talk about rerendering a component we are talking about making use of state
+- Usually when we expect to have an array of objects we'll have a default value of an empty array.
+  - Usually a default value of null which indicates that we do not yet have any data available.
+  - Eventually going to have to make sure that result is not null when looking to access data
