@@ -785,3 +785,13 @@
   - CustomComponent is an element
     - elements wrapped with this tag will be passed as a prop called 'children'
     - allows us to accept some other component more or less as an argument
+
+### Moving Data With Context
+
+- Provider
+
+  - When a context object is created, we get something called a provider
+  - The provider accepts whatever information we provide it, and will make available for all of our child components
+
+- useContext
+  - function that analyzes a context object and gives us access to it's value prop
