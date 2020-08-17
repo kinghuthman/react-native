@@ -641,3 +641,31 @@
 ### Running an Initial Search
 
 - default search when app loads up
+
+## Making Hooks Reusable
+
+### The UseEffect Hook
+
+- useEffect's Second Argument
+  - useEffect(()=> {})
+    - run the arrow function every time the component is rendered
+  - useEffect(()=> {},[])
+    - run the arrow function only when the component is first rendered, if there is an empty array as the second argument
+  - useState(() => {}, [value])
+    - run the arrow function only when the component is first rendered, and when the 'value' changes
+
+### Extracting Hook Logic
+
+- Want to keep all things related to api calls in a separate hook file
+
+### Showing Search Results
+
+-..
+
+### Grouping Results
+
+- ..
+
+### FlatList Rendering
+
+-
