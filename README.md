@@ -287,7 +287,7 @@
 
 ### Introduction to Reducers
 
-- reducer
+- reducer (method used for useReducer)
   - function that gets called with two objects
     - argument #1
       - object that has all of our state in it
@@ -807,3 +807,13 @@
 ### It works
 
 - Context is just the system of communicating information
+
+### Opportunity to improve
+
+- useReducer
+
+### Updating With useReducer
+
+-..
+
+### Automating Context Creation
