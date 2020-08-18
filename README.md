@@ -839,3 +839,9 @@
 ### Updating the Reducer
 
 -..
+
+### Navigation on Tap
+
+-..
+
+### Retrieving Single Posts
