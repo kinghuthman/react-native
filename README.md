@@ -890,7 +890,7 @@
 
 -..
 
-### Initial Form Values
+### Initial Form Valueslu
 
 -..
 
@@ -904,3 +904,13 @@
 ### Editing in a Reducer
 
 ### Navigating Backwards
+
+##
+
+### JSON Server and Ngrok Setup
+
+- two terminals to run server and ngrok
+- ngrok gives us access to our localhost
+- yarn start, yarn run jsonserver yarn run ngrok
+
+http://5f78ea7fb83d.ngrok.io
