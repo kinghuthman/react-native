@@ -37,5 +37,12 @@ export const { Context, Provider } = createDataContext(
     addBlogPost,
     deleteBlogPost,
   },
-  [{ title: "Test", content: "Testing" }]
+  [
+    {
+      id: Math.floor(Math.random() * 99999),
+      title: "Test",
+      content: "Testing",
+      key: "k" + Math.floor(Math.random() * 99999),
+    },
+  ]
 );
