@@ -930,3 +930,9 @@
 - addListener
   - an event handler that waits to see how the screen behaves and performs a method that was passed to it as a second argument
   - make sure to clean up by using .remove()
+
+### Deleting a Post
+
+-..
+
+### Editing a Post
