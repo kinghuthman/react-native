@@ -845,3 +845,25 @@
 -..
 
 ### Retrieving Single Posts
+
+-..
+
+### Create Screen
+
+-..
+
+### Header Navigation
+
+- Can hook our screens up to navigationOptions to provide it an object that can be used to customize the different things that displayed on our screen
+
+### Displaying a Form
+
+- Even though we are making use of context here and we're trying to centralize all of our state in one location we can still have a local state inside of one single component
+- Controlled Input
+  - Adding state to a text input
+
+### Saving a New Post
+
+-..
+
+### Navigation on Save
