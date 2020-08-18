@@ -817,3 +817,8 @@
 -..
 
 ### Automating Context Creation
+
+- custom context
+  - a method that will take in three arguments
+    - reducer, actions, initialState
+    - method with two functions that will be exported
