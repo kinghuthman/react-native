@@ -892,4 +892,15 @@
 
 ### Initial Form Values
 
--
+-..
+
+### Default Props
+
+- can set default props on a component
+  - Component.defaultProps = {}
+
+### Editing Action Function
+
+### Editing in a Reducer
+
+### Navigating Backwards

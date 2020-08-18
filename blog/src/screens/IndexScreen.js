@@ -17,7 +17,7 @@ const IndexScreen = ({ navigation }) => {
     <View>
       <FlatList
         data={state}
-        keyExtractor={(blogPost) => blogPost.key}
+        keyExtractor={(blogPost) => blogPost.title}
         renderItem={({ item }) => {
           return (
             <TouchableOpacity
