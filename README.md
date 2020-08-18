@@ -822,3 +822,8 @@
   - a method that will take in three arguments
     - reducer, actions, initialState
     - method with two functions that will be exported
+
+### More Automatic Creation
+
+- loop through the actions object, take the function needed and call it with the dispatch argument, that will give us back the function associated with the key from the actions object, that function will pass on down into our value prop within our Provider
+- // actions === { addBlogPost: (dispatch) => {return () => {}}}
