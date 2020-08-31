@@ -990,3 +990,15 @@
   - expects a boolean
 - autoCapitalize
   - none, words, sentence? possibly more need to check docs
+
+### The Auth Context
+
+- DataContext
+  - export a function that sets up all of the context stuff automagically
+    - it takes in a reducer function, actions object and default state as arguments
+    - this will have Context and Provider
+      - Provider will be a helper function that takes in children as props
+        - useReducer call will be setup here
+        - loop over the actions and call them with dispatch
+        - return Context.Provider that has values of state and actions then wrap around children...?
+- wrap our app with our new AuthProvider so that all of its children(components within App) will have state
