@@ -936,3 +936,57 @@
 -..
 
 ### Editing a Post
+
+-..
+
+## In-App Authentication
+
+### Server Setup
+
+- password: pass321word
+- link <https://cloud.mongodb.com/v2/5f4aa7862fbb6617536cdcc1#metrics/replicaSet/5f4aa88ee73d161b8809da02/explorer/%3Cdbname%3E/users/find>
+
+### Navigation Design
+
+- Types of navigation
+  - Stack Navigator
+    - Classic back-and-forth between different nested screens
+  - Bottom Tab Navigator
+    - Shows a tab bar at the bottom with buttons to navigate between screens
+  - Switch Navigator
+    - Abrupt, 100% cuts between different screens
+  - Drawer Navigator
+    - Shows a fly-out menu from one side of the device
+- This was a really good section to come back to for future navigation designs
+
+### A Lot of BOILERPLATE
+
+-..
+
+### Navigator Hookup
+
+- lowercase key for navigator is just a reference to another navigation stack
+
+### React Native Elements
+
+- Button element from react-native has very little customization options commpared to button from Elements
+
+### Helper Style Components
+
+- Spacing
+  - Rather than styling each element make a helper component with some styling that does the work
+
+### Styling Odds and Ends
+
+- To hide the header add navigation options (header: () => false)
+- flex: 1 will cause the view to expand and fill up as much space as it can
+  - justifyContent: center will center the contents
+
+### Input Props
+
+- secureTextEntry
+  - hides passwords
+- autoCorrect
+  - expects a boolean
+- autoCapitalize
+  - none, words, sentence? possibly more need to check docs
