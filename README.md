@@ -1037,3 +1037,23 @@
 ### Storing the Token
 
 - implicit return to clean up code
+
+### Navigating From Outside of React
+
+- navigationRef file
+  - simple function that sets react-natives nav to our reference of navigator
+- use function in app component and pass navigator as argument
+- dispatch an action, telling react we want to change state and show different screen to our users
+
+### Navigation to Signin
+
+-..
+
+### Extracting form logic
+
+- make a reusable component
+  - destructure call for methods if passing in the same arguments into "dispatch"/eventHandler within component
+
+### Last bit of extracting
+
+-..
