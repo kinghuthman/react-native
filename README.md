@@ -1002,3 +1002,38 @@
         - loop over the actions and call them with dispatch
         - return Context.Provider that has values of state and actions then wrap around children...?
 - wrap our app with our new AuthProvider so that all of its children(components within App) will have state
+
+### What's the Context Doing? (Design)
+
+- action functions are functions called with dispatch that return a function
+  - inner function is what gets called inside of the component
+    - only way to get dispatch is through the boundActions process which is how the inner function gets access
+
+### Axios Setup
+
+- using ngrok to handle network issues
+  - need to update axios baseURL whenever server restarts || after 8 hours
+  - use npx for ngrok
+    - npx ngrok http 3000
+
+### Making an API Request
+
+- ..
+
+### Handling Error Requests
+
+- always call dispatch anytime we want to handle our state
+
+### Async Storage
+
+- asyncStrorage
+  - setItem(key)
+    - stores information on the user's device
+  - getItem(key)
+    - retrieves an ite that has been stored
+  - removeItem(key)
+    - remove some stored information
+
+### Storing the Token
+
+- implicit return to clean up code
