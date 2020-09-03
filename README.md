@@ -1057,3 +1057,34 @@
 ### Last bit of extracting
 
 -..
+
+### Creating a NavLink
+
+- withNavigation
+  - all the screen components rendered with a navigator will be rendered directly by react navigation and each them will have a navigation prop
+    - that's why the screens can reach into it's props object and get access to the navigator
+    - child components can receive props from parent to have navigation or wrap child component with withNavigator
+
+### Real Component Reuse
+
+-..
+
+### Wiring up signin
+
+-..
+
+### Clearing Error Messages
+
+- NavigationEvents doesnt display any elements on the screen
+  - we can pass it callback events
+    - these will be called automatically anytime that screen is rendered or unmounted
+    - ## onWillFocus
+    - onDidFocus
+      - when we land on the screen
+    - onWillBlur
+      - as soon as we are about to navigate, link clicked
+    - onDidBlur
+
+### Automatic Signin
+
+-..
