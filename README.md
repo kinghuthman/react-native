@@ -1088,3 +1088,9 @@
 ### Automatic Signin
 
 -..
+
+### Empty Screens While Resolving Auth
+
+- blank screen to handle render of autosignin
+
+### Signing Out a User
