@@ -1094,3 +1094,7 @@
 - blank screen to handle render of autosignin
 
 ### Signing Out a User
+
+- ..
+
+### Safe Area Views
