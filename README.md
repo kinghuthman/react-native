@@ -1,5 +1,19 @@
 # REACT NATIVE
 
+## Table of Contents
+
+> > [Course Overview](#course-overview)
+
+> > [Working with Content](#working-with-content)
+
+> > [List Building - With Style](#list-building)
+
+> > [Navigating Users Between Screens](#navigating-users)
+
+> > [Building Reusable Components](#building-reusable)
+
+<a name="course-overview"></a>
+
 ## Course Overview
 
 - Physical Device Setup
@@ -11,6 +25,8 @@
   - Scan qr code that pops up in browser
     - Toggle to tunnel if connection issue
   - Making Changes
+
+<a name="working-with-content"></a>
 
 ## Working with Content
 
@@ -58,6 +74,8 @@
   - return 'opening tag-View' jsx elements 'closing tag-View'
 - Placing the opening tag below the return keyword returns nothing
   - needs to opening up next to the return keyword or wrapped with parenthesis
+
+<a name="list-building"></a>
 
 ## List Building - With Style!
 
@@ -123,7 +141,9 @@
 - showsHorizontalScrollIndicator
   - property to control scroll bar
 
-## Navigating users between screens
+<a name="navigating-users"></a>
+
+## Navigating Users Between Screens
 
 ### Button types
 
@@ -149,8 +169,6 @@
   - fadeout effect applies to anything within the element's tags
 - multiple elements can be placed within this element but it will all have the touch/button effect which can be useful depending on the use case
 
-## Navigating Users Between Screens
-
 ### Navigating with React Navigation
 
 - React Navigation / Stack Navigator
@@ -168,6 +186,8 @@
 ### Destructing Props
 
 - curly braces inside of parenthesis can use navigation now instead of props
+
+<a name="building-reusable"></a>
 
 ## Building Reusable Components
 
@@ -1098,3 +1118,7 @@
 - ..
 
 ### Safe Area Views
+
+-..
+
+### Working on Track Create
