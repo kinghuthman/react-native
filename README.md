@@ -1122,3 +1122,10 @@
 -..
 
 ### Working on Track Create
+
+- <SafeAreaView forceInset={{ top: 'always' }}>
+  - helps to make sure title of the screen isn't out of place and cutoff
+
+### Showing a Map
+
+- library react-native-maps
