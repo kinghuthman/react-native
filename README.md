@@ -10,7 +10,11 @@
 
 > > [Navigating Users Between Screens](#navigating-users)
 
-> > [Building Reusable Components](#building-reusable)
+> > [Building Reusable Components](#building-reusable)\
+
+> > [In-App Authentication](#in-app-authentication)
+
+> > > [Notes on Location](#notes-on-location)
 
 <a name="course-overview"></a>
 
@@ -959,6 +963,8 @@
 
 -..
 
+<a name="in-app-authentication"></a>
+
 ## In-App Authentication
 
 ### Server Setup
@@ -1129,3 +1135,22 @@
 ### Showing a Map
 
 - library react-native-maps
+
+### Drawing a Series of Points
+
+- Polyline from react-native-maps
+
+<a name="notes-on-location"></a>
+
+### Notes on Location
+
+- Before tracking the users location, we need to ask for permission
+- Two forms of location tracking - foreground and background
+  - foreground
+    - gives us users location whenever our app is visible on the screen
+    - easy to set up and use
+  - background
+    - gives us the users location at all times, even if the app is not visible or device is locked
+    - uses considerably more battery power
+    - much more complicated to set up
+- We need to be extremely aware of when we're tracking location - it consumes battery
